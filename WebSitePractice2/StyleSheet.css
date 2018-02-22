@@ -1,0 +1,142 @@
+﻿.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 60px 900px 800px 500px;
+    margin: auto;
+}
+
+/*first static  BG*/
+.fixed-bg {
+    background-image: url('images/bgrnd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+    height: 100vh;
+    grid-column: 1/ span 6;
+}
+
+/*first scroll BG*/
+.scroll-bg {
+    background-color: lightsteelblue;
+    grid-column: 1/span 6;
+  
+}
+/*second fixed BG*/
+.fixed-bg-2 {
+    background-image: url('images/FB_IMG_1519235922864.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+    height: 100vh;
+    grid-column: 1/ span 6;
+}
+/*nav BAR*/
+.logo {
+    grid-column: 1 /span 4;
+    background-color: white;
+}
+
+img#logo {
+    height: 65%;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+nav {
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    grid-column: 5/span 2;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+a {
+    color: navy;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+    a:hover {
+        background-color: white;
+        color: cornflowerblue;
+    }
+
+
+/*div one content*/
+div.jumbotron-1 {
+
+}
+
+#name {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+p {
+    color: white;
+    font-size: 1rem;
+    
+}
+img#headshot{
+    height: 30vh;
+}
+
+/*div two*/
+div.jumbotron-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.projects {
+
+}
+h1#project {
+    font-size: 2rem;
+    color: navy;
+    display: flex;
+    /*flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;*/
+  
+}
+img#project-1 {
+    height: 20%;
+}
+img#project-2 {
+    height: 20%;
+}
+img#project-3 {
+    height: 20%;
+}
+
+
+#logo {
+    display: flex;
+    padding: 0px;
+    margin-top: 20%;
+    margin-left: 25%;
+    height: 50%;
+    width: 50%;
+    margin-right: 0;
+}*/
+
