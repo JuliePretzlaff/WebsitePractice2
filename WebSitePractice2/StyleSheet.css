@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 60px 900px 800px 500px;
+    grid-template-rows: 60px 900px 400px 500px 500px;
     margin: auto;
 }
 
@@ -22,6 +22,16 @@
     grid-column: 1/span 6;
   
 }
+/*scroll-bg-tests wbr my headshot*/
+.scroll-bg-test {
+    background-color:lightsteelblue;
+    background-size: cover;
+    grid-column: 1/span 2;
+}
+.scroll-bg-test-2{
+    background-color: lightsteelblue;
+    grid-column: 3/span 4;
+}
 /*second fixed BG*/
 .fixed-bg-2 {
     background-image: url('images/FB_IMG_1519235922864.jpg');
@@ -32,6 +42,9 @@
     height: 100vh;
     grid-column: 1/ span 6;
 }
+
+
+
 /*nav BAR*/
 .logo {
     grid-column: 1 /span 4;
@@ -44,15 +57,117 @@ img#logo {
     margin-left: 10%;
 }
 
-nav {
+/*nav {
     top: 0;
     right: 0;
     width: 100%;
     background-color: white;
     grid-column: 5/span 2;
+}*/
+    *{
+    box-sizing: border-box;
 }
 
-ul {
+body {
+    margin: 0px;
+    font-family: 'segoe ui';
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+}
+.nav > .nav-header {
+    display: inline;
+}
+
+    .nav > .nav-header > .nav-title {
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+    }
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+    .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #efefef;
+    }
+
+        .nav > .nav-links > a:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+        .nav > .nav-btn > label {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            padding: 13px;
+        }
+
+            .nav > .nav-btn > label:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+
+            .nav > .nav-btn > label > span {
+                display: block;
+                width: 25px;
+                height: 10px;
+                border-top: 2px solid #eee;
+            }
+
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+        .nav > .nav-links > a {
+            display: block;
+            width: 100%;
+        }
+
+    .nav > #nav-check:not(:checked) + .nav-links {
+        height: 0px;
+    }
+
+    .nav > #nav-check:checked + .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+}
+    /*/*ul {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
@@ -73,7 +188,7 @@ a {
     a:hover {
         background-color: white;
         color: cornflowerblue;
-    }
+    }*/*/
 
 
 /*div one content*/
@@ -82,7 +197,7 @@ div.jumbotron-1 {
 }
 
 #name {
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -90,18 +205,26 @@ div.jumbotron-1 {
     align-content: center;
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 5%;
 }
 
 p {
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     
 }
 img#headshot{
-    height: 30vh;
+    height: 5%;
+   
 }
 
-/*div two*/
+
+
+
+
+
+
+/*project div*/
 div.jumbotron-2 {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +253,7 @@ img#project-3 {
 }
 
 
-#logo {
+/*#logo {
     display: flex;
     padding: 0px;
     margin-top: 20%;
@@ -138,5 +261,5 @@ img#project-3 {
     height: 50%;
     width: 50%;
     margin-right: 0;
-}*/
+}*/*/
 
