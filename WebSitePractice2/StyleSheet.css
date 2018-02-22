@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 60px 900px 400px 500px 500px;
+    grid-template-rows: 50px 700px 400px 500px 500px;
     margin: auto;
 }
 
@@ -22,11 +22,14 @@
     grid-column: 1/span 6;
   
 }
-/*scroll-bg-tests wbr my headshot*/
+/*scroll-bg-tests w my headshot*/
 .scroll-bg-test {
-    background-color:lightsteelblue;
+    background-color: lightsteelblue;
     background-size: cover;
     grid-column: 1/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .scroll-bg-test-2{
     background-color: lightsteelblue;
@@ -45,25 +48,9 @@
 
 
 
-/*nav BAR*/
-.logo {
-    grid-column: 1 /span 4;
-    background-color: white;
-}
 
-img#logo {
-    height: 65%;
-    margin-top: 2%;
-    margin-left: 10%;
-}
 
-/*nav {
-    top: 0;
-    right: 0;
-    width: 100%;
-    background-color: white;
-    grid-column: 5/span 2;
-}*/
+/*nav bar*/
     *{
     box-sizing: border-box;
 }
@@ -75,8 +62,9 @@ body {
 
 .nav {
     height: 50px;
-    width: 100%;
-    background-color: #4d4d4d;
+    grid-column: 1/ span 6;
+    /*width: 100%;*/
+    background-color: white;
     position: relative;
 }
 .nav > .nav-header {
@@ -86,8 +74,11 @@ body {
     .nav > .nav-header > .nav-title {
         display: inline-block;
         font-size: 22px;
-        color: #fff;
-        padding: 10px 10px 10px 10px;
+        color: navy;
+        /*padding: 10px 10px 10px 10px;*/
+        height: 80%;
+        margin-top: .5%;
+        margin-left: 3%;
     }
 
 .nav > .nav-btn {
@@ -104,11 +95,12 @@ body {
         display: inline-block;
         padding: 13px 10px 13px 10px;
         text-decoration: none;
-        color: #efefef;
+        color: navy;
     }
 
         .nav > .nav-links > a:hover {
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: navy;
+            color: white;
         }
 
 .nav > #nav-check {
@@ -138,14 +130,14 @@ body {
                 display: block;
                 width: 25px;
                 height: 10px;
-                border-top: 2px solid #eee;
+                border-top: 2px solid navy;
             }
 
     .nav > .nav-links {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: #333;
+        background-color: navy;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -167,28 +159,11 @@ body {
         overflow-y: auto;
     }
 }
-    /*/*ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-}
 
-a {
-    color: navy;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
-    a:hover {
-        background-color: white;
-        color: cornflowerblue;
-    }*/*/
+
+
+
 
 
 /*div one content*/
@@ -213,8 +188,17 @@ p {
     font-size: 1.5rem;
     
 }
-img#headshot{
-    height: 5%;
+
+/*div 2/split div content*/
+div.jumbotron-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 400px;*/
+ 
+}
+img#headshot {
+    height: 80%;
    
 }
 
@@ -225,7 +209,7 @@ img#headshot{
 
 
 /*project div*/
-div.jumbotron-2 {
+div.jumbotron-5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -251,15 +235,4 @@ img#project-2 {
 img#project-3 {
     height: 20%;
 }
-
-
-/*#logo {
-    display: flex;
-    padding: 0px;
-    margin-top: 20%;
-    margin-left: 25%;
-    height: 50%;
-    width: 50%;
-    margin-right: 0;
-}*/*/
 
