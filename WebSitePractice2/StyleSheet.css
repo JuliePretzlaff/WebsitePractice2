@@ -291,17 +291,14 @@ a.prolink:hover{
 }
 img#project-1 {
     height: 50%;
-    margin: 5%;
     /*justify-content: center;
     display: flex;*/
 }
 img#project-2 {
     height: 50%;
-    margin: 5%;
 }
 img#project-3 {
     height: 100%;
-    margin: 5%;
 }
 
 
@@ -379,12 +376,11 @@ h1#footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 80%;
+    height: 100%;
     width: 100%;
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
-    margin: 5%;
 }
 
 .pro1overlay:hover .overlay1 {
@@ -427,7 +423,6 @@ h1#footer {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
-    margin: 5%;
 }
 
 .pro2overlay:hover .overlay2 {
@@ -470,7 +465,6 @@ h1#footer {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
-    margin: 5%;
 }
 
 .pro3overlay:hover .overlay3 {
