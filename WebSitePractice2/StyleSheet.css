@@ -1,12 +1,13 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px 700px 425px 500px 500px 200px;
+    grid-template-rows: 50px 700px 425px 500px 300px 200px;
     margin: auto;
 }
 
 /*first static  BG*/
 .fixed-bg {
+    /*background-image: url('images/AP4-2.jpg');*/
     background-image: url('images/bgrnd.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,7 +38,7 @@
 }
 /*second fixed BG*/
 .fixed-bg-2 {
-    background-image: url('images/FB_IMG_1519235922864.jpg');
+    background-image: url('images/GNPEdited-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -46,8 +47,9 @@
     grid-column: 1/ span 6;
 }
 
+/*footer b*/
 div.fixed-bg-3 {
-    background-image: url('images/footer2.jpg');
+    background-image: url('images/bgrnd.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -197,7 +199,7 @@ div.jumbotron-1 {
 
 p#about {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 
     
 }
@@ -208,11 +210,10 @@ img#headshot {
     height: 80%;
 }
 
-section.projects{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+section.skill-text{
+    margin-top: 4%;
 }
+
 h1#header{
     display: flex;
     flex-wrap: wrap;
@@ -240,12 +241,13 @@ p#skills-p{
 
 /*project div*/
 div.jumbotron-4 {
-    grid-row: 4/span 1;
+    /*grid-row: 4/span 1;*/
 }
-.projects {
+section.projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 h1#projects {
     font-size: 2rem;
@@ -273,5 +275,36 @@ div.transbox {
     background-color: lightcoral;
     /*border: 1px solid black;*/
     opacity: 0.3;
-    /*filter: alpha(opacity=60); /* For IE8 and earlier */*/
+    /*filter: alpha(opacity=60); /* For IE8 and earlier */ */
+}
+
+
+
+/*contact*/
+div.jumbotron-5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1#contact-header{
+    font-size:1.5rem;
+    margin-top:3%;
+    color: white;
+}
+p#contact-info{
+    color: white;
+    font-size: 1rem;
+}
+/*footer*/
+h1#footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: flex-end;
+}
+h1#footer{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+
 }
