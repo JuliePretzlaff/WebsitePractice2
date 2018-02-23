@@ -257,19 +257,26 @@ div.jumbotron-4 {
     flex-direction: column;
 }
 section.projects {
- 
+    display: flex;
 }
 h1#projects {
     font-size: 2rem;
     color: crimson;
-    display: flex;
+    
     font-weight:bold;
+}
+a.prolink{
+    color:white;
+}
+a.prolink:hover{
+    color: crimson;
 }
 img#project-1 {
     height: 100%;
     margin: 5%;
-    justify-content: center;
-    display: flex;
+    /*justify-content: center;
+    display: flex;*/
+
 
 }
 img#project-2 {
@@ -298,7 +305,7 @@ p#contact-title {
 h1#contact-header{
     font-size:2rem;
     margin-top:4%;
-    color: white;
+    color: navy;
 
 
 }
@@ -311,11 +318,12 @@ p#contact-info {
     align-content:center;
 }
 a#contact-info{
-    color: white;
+    color: navy;
     font-size: 1rem;
 }
 a#contact-info:hover{
-    color: navy;
+    color: cornflowerblue;
+    background-color: navy;
 }
 /*footer*/
 h1#footer{
