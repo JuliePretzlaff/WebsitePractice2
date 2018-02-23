@@ -287,13 +287,28 @@ div.jumbotron-5{
     justify-content: center;
 }
 h1#contact-header{
-    font-size:1.5rem;
-    margin-top:3%;
-    color: white;
+
 }
-p#contact-info{
+h1#contact-header{
+    font-size:2rem;
+    margin-top:6%;
+    color: white;
+    align-items: center;
+}
+p#contact-info {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+}
+a#contact-info{
     color: white;
     font-size: 1rem;
+}
+a#contact-info:hover{
+    color: navy;
 }
 /*footer*/
 h1#footer{
