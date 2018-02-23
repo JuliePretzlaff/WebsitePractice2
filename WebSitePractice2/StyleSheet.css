@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px 700px 425px 500px 300px 200px;
+    grid-template-rows: 50px 700px 425px 700px 300px 200px;
     margin: auto;
 }
 
@@ -265,14 +265,17 @@ h1#projects {
     font-weight:bold;
 }
 img#project-1 {
-    height: 50%;
+    height: 100%;
+    margin: 5%;
 
 }
 img#project-2 {
-    height: 50px;
+    height: 100%;
+    margin: 5%;
 }
 img#project-3 {
-    height: 50px;
+    height: 100%;
+    margin: 5%;
 }
 
 
@@ -291,7 +294,7 @@ p#contact-title {
 }
 h1#contact-header{
     font-size:2rem;
-    margin-top:5%;
+    margin-top:4%;
     color: white;
 
 
@@ -328,7 +331,7 @@ h1#footer{
 
 
 /*project1 overlay:*/
-div.pro1-overlay {
+.pro1overlay {
     position: relative;
     width: 50%;
 }
@@ -348,12 +351,13 @@ div.pro1-overlay {
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+    transition: .9s ease;
+    background-color: lightcoral;
+    margin: 5%;
 }
 
-div.pro1-overlay:hover .overlay {
-    opacity: 1;
+.pro1overlay:hover .overlay {
+    opacity: .9;
 }
 
 .text {
@@ -365,6 +369,92 @@ div.pro1-overlay:hover .overlay {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    opacity: 1;
 }
 
+
+/*project 2 overlay:*/
+.pro2overlay {
+    position: relative;
+    width: 50%;
+}
+
+.pro2 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .9s ease;
+    background-color: lightcoral;
+    margin: 5%;
+}
+
+.pro2overlay:hover .overlay {
+    opacity: .9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+
+
+/*project 2 overlay:*/
+.pro3overlay {
+    position: relative;
+    width: 50%;
+}
+
+.pro3 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .9s ease;
+    background-color: lightcoral;
+    margin: 5%;
+}
+
+.pro3overlay:hover .overlay {
+    opacity: .9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
 
