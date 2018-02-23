@@ -44,7 +44,17 @@
     background-attachment: fixed;
     /*min-height: 100%;
     height: 100vh;*/
-    grid-column: 1/ span 6;
+    grid-column: 3/ span 4;
+
+
+}
+div.oppose-rocks {
+    grid-column: 1/ span 2;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /*footer b*/
@@ -241,42 +251,30 @@ p#skills-p{
 
 /*project div*/
 div.jumbotron-4 {
-    /*grid-row: 4/span 1;*/
-}
-section.projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+}
+section.projects {
+ 
 }
 h1#projects {
     font-size: 2rem;
-    color: navy;
+    color: crimson;
     display: flex;
     font-weight:bold;
-    opacity: 1;
-    /*flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;*/
-  
 }
 img#project-1 {
-    height:50px;
-    opacity: 1;
+    height: 50%;
+
 }
 img#project-2 {
-    height: 25%;
+    height: 50px;
 }
 img#project-3 {
     height: 50px;
 }
-div.transbox {
-    margin: 5%;
-    background-color: lightcoral;
-    /*border: 1px solid black;*/
-    opacity: 0.3;
-    /*filter: alpha(opacity=60); /* For IE8 and earlier */ */
-}
+
 
 
 
@@ -286,14 +284,17 @@ div.jumbotron-5{
     flex-wrap: wrap;
     justify-content: center;
 }
-h1#contact-header{
-
+p#contact-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 h1#contact-header{
     font-size:2rem;
-    margin-top:6%;
+    margin-top:5%;
     color: white;
-    align-items: center;
+
+
 }
 p#contact-info {
     margin-top: 1%;
@@ -323,3 +324,47 @@ h1#footer{
     font-size: 1rem;
 
 }
+
+
+
+/*project1 overlay:*/
+div.pro1-overlay {
+    position: relative;
+    width: 50%;
+}
+
+.pro1 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+div.pro1-overlay:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
