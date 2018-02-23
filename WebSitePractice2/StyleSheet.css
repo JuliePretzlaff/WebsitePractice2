@@ -1,7 +1,7 @@
 ﻿.container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 50px 700px 425px 700px 300px 200px;
+    grid-template-rows: 50px 700px 425px 900px 300px 200px;
     margin: auto;
 }
 
@@ -252,8 +252,9 @@ p#skills-p{
 /*project div*/
 div.jumbotron-4 {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: center;
+    flex-direction: column;
 }
 section.projects {
  
@@ -267,6 +268,8 @@ h1#projects {
 img#project-1 {
     height: 100%;
     margin: 5%;
+    justify-content: center;
+    display: flex;
 
 }
 img#project-2 {
