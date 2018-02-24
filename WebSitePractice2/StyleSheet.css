@@ -281,6 +281,7 @@ h1#projects {
     margin-top: 10%;
     display: flex;
     justify-content:center;
+    flex-wrap: wrap;
     
 }
 a.prolink{
