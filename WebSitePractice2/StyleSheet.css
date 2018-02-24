@@ -485,3 +485,23 @@ h1#footer {
     opacity: 1;
 }
 
+
+
+/*fade in effect*/
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    20%{
+        opacity:0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+div.jumbotron-1 {
+    animation-name: fadeInOut;
+    animation-duration: 7s;
+}
