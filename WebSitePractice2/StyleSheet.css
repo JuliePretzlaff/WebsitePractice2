@@ -181,9 +181,6 @@ div.nav-links {
 
 
 
-
-
-
 /*div one content*/
 div.jumbotron-1 {
 
@@ -253,7 +250,6 @@ p#skills-p {
 
 
 /*project div*/
-/*second fixed BG*/
 .fixed-bg-2 {
     background-image: url('images/GNPEdited-1.jpg');
     
@@ -269,7 +265,7 @@ p#skills-p {
     align-items: center;
 }
 div.jumbotron-4 {
-    grid-column-start: 3;
+    grid-column-start: 2;
 }
 
 h1#projects {
@@ -278,7 +274,8 @@ h1#projects {
     font-weight: 200;
     width: 100%;
     background-color: white;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 0;
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
@@ -293,14 +290,19 @@ a.prolink{
     }
 img#project-1 {
     height: 50%;
+    margin-left: 15%;
+    margin-bottom: 10%
     /*justify-content: center;
     display: flex;*/
 }
 img#project-2 {
     height: 50%;
+    margin-left: 15%;
+    margin-bottom: 10%
 }
 img#project-3 {
     height: 100%;
+    margin-left: 15%;
 }
 
 
@@ -383,10 +385,14 @@ h1#footer {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
+    margin-left: 15%;
+    margin-bottom: 5%
 }
 
 .pro1overlay:hover .overlay1 {
     opacity: .9;
+    margin-left: 15%;
+    margin-bottom: 5%
 }
 
 .text {
@@ -425,10 +431,14 @@ h1#footer {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
+    margin-left: 15%;
+    margin-bottom: 5%
 }
 
 .pro2overlay:hover .overlay2 {
     opacity: .9;
+    margin-left: 15%;
+    margin-bottom: 5%
 }
 
 .text {
@@ -467,10 +477,12 @@ h1#footer {
     opacity: 0;
     transition: .9s ease;
     background-color: lightsteelblue;
+    margin-left: 15%;
 }
 
 .pro3overlay:hover .overlay3 {
     opacity: .9;
+    margin-left: 15%;
 }
 
 .text {
@@ -487,7 +499,7 @@ h1#footer {
 
 
 
-/*fade in effect*/
+/*fade in effect for about me text*/
 @keyframes fadeInOut {
     0% {
         opacity: 0;
