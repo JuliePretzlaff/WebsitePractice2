@@ -256,6 +256,7 @@ p#skills-p {
 /*second fixed BG*/
 .fixed-bg-2 {
     background-image: url('images/GNPEdited-1.jpg');
+    /*background-image: url('images/JulesAnnapurna-155.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -264,12 +265,11 @@ p#skills-p {
     grid-column: 1/ span 6;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-
 }
 div.jumbotron-4 {
-    
+    grid-column-start: 3;
 }
 
 h1#projects {
@@ -286,9 +286,10 @@ h1#projects {
 a.prolink{
     color:navy;
 }
-a.prolink:hover{
-    color: cornflowerblue;
-}
+    a.prolink:hover {
+        color: cornflowerblue;
+        background-color: navy;
+    }
 img#project-1 {
     height: 50%;
     /*justify-content: center;
