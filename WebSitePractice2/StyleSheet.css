@@ -259,6 +259,17 @@ h1#projects {
     justify-content: center;
     flex-wrap: wrap;
 }
+h1#directions {
+    font-size: 1rem;
+    color: navy;
+    font-weight: 200;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 div.jumbotron-4 {
     grid-column-start: 2;
    flex-direction:row;
@@ -266,8 +277,9 @@ div.jumbotron-4 {
 p#pro-title{
 
 }
-a.prolink{
-    color:navy;
+a.prolink {
+    color: navy;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
     a.prolink:hover {
         color: cornflowerblue;
@@ -316,15 +328,20 @@ p#contact-info {
     justify-content: center;
     align-content: center;
     font-weight: 200;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 a#contact-info {
     color: navy;
     font-size: 1rem;
     font-weight: 200;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 a#contact-info:hover{
     color: cornflowerblue;
     background-color: navy;
+}
+i.fab-fa-linkedin-in {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 /*footer*/
 h1#footer{
